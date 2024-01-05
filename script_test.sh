@@ -6,18 +6,18 @@ cd ComfyUI
 
 # ③requirement.txtをエディターで開きます
 (
-echo torchsde
-echo einops
-echo transformers>=4.25.1
-echo safetensors>=0.3.0
-echo aiohttp
-echo accelerate
-echo pyyaml
-echo Pillow
-echo scipy
-echo tqdm
-echo psutil
-) > requirement.txt
+echo 'torchsde'
+echo 'einops'
+echo 'transformers>=4.25.1'
+echo 'safetensors>=0.3.0'
+echo 'aiohttp'
+echo 'accelerate'
+echo 'pyyaml'
+echo 'Pillow'
+echo 'scipy'
+echo 'tqdm'
+echo 'psutil'
+) > requirements.txt
 
 # ④以下の内容を貼り付け、Ctrl＋sで保存し、Ctrl+xで抜けます
 
