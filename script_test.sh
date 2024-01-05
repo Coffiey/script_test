@@ -4,6 +4,10 @@ git clone https://github.com/comfyanonymous/ComfyUI.git
 # ②ディレクトリを移動します
 cd ComfyUI
 
+python -m venv venv
+
+source venv/bin/activate
+
 # ③requirement.txtをエディターで開きます
 (
 echo 'torchsde'
