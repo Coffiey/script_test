@@ -17,10 +17,16 @@ echo 'Pillow'
 echo 'scipy'
 echo 'tqdm'
 echo 'psutil'
+echo 'torch==2.1.0'
+echo 'torchvision==0.16.0'
+echo 'torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118'
+
 ) > requirements.txt
 
 # ④以下の内容を貼り付け、Ctrl＋sで保存し、Ctrl+xで抜けます
-
+# torch==2.1.0
+# torchvision==0.16.0
+# torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
 # torchsde
 # einops
 # transformers>=4.25.1
@@ -34,10 +40,9 @@ echo 'psutil'
 # psutil
 
 # ⑤pytorchをインストールします。
-# pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
 
 # ⑥requiremnt.txtを元にパッケージをインストールします
-# pip install -r requirements.txt
+pip install -r requirements.txt
 
 # ⑦ComfyUIを起動します
-# python main.py
+python main.py
