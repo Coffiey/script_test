@@ -11,6 +11,7 @@ cd ComfyUI
 python -m venv venv
 
 source venv/bin/activate
+
 pip install --upgrade pip
 
 # ③requirement.txtをエディターで開きます
@@ -63,7 +64,7 @@ cd SD1.5
 #shared models
 wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors?download=true -O model.safetensors
 
-cd ../upscale_models
+cd ../../upscale_models
 
 wget https://huggingface.co/gemasai/4x_NMKD-Superscale-SP_178000_G/resolve/main/4x_NMKD-Superscale-SP_178000_G.pth
 wget https://huggingface.co/Acly/Omni-SR/resolve/main/OmniSR_X2_DIV2K.safetensors
