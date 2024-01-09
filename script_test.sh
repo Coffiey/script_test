@@ -1,5 +1,14 @@
+
 sudo apt install -y python3.8-venv
 sudo apt-get install libglib2.0-0 -y
+# sudo apt install systemd
+
+(
+echo #!bin/bash
+echo cd ComfyUI
+echo source venv/bin/activate
+echo  python3 main.py
+) > start.sh
 
 # ①Githubからクローンします
 git clone https://github.com/comfyanonymous/ComfyUI.git
