@@ -1,4 +1,5 @@
 sudo apt install -y python3.8-venv
+sudo apt-get install libglib2.0-0 -y
 
 # ①Githubからクローンします
 git clone https://github.com/comfyanonymous/ComfyUI.git
@@ -35,15 +36,18 @@ echo 'torchaudio==2.0.2'
 # ⑥requiremnt.txtを元にパッケージをインストールします
 pip install -r requirements.txt
 
+chmod +rwx custom_nodes
+
 cd custom_nodes
 
-chmod +rwx /custom_nodes
-
 git clone https://github.com/Fannovel16/comfyui_controlnet_aux/
+
+chmod +rwx comfyui_controlnet_aux
+cd comfyui_controlnet_aux
+
 pip install -r requirements.txt
 
-chmod +rwx /custom_nodes/comfyui_controlnet_aux
-
+cd ..
 
 git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
 
@@ -52,6 +56,9 @@ git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale --recursive
 git clone https://github.com/Acly/comfyui-tooling-nodes.git
 
 cd ../models/clip_vision
+
+mkdir SD1.5
+cd SD1.5
 
 #shared models
 wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors?download=true -O model.safetensors
