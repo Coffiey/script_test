@@ -103,4 +103,4 @@ wget https://huggingface.co/syaimu/7th_Layer/resolve/main/7th_anime_v3/7th_anime
 #  redirect to comfyUI root drectory
 cd ../../
 
-python main.py
+python3 main.py
