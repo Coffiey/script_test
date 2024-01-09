@@ -1,14 +1,16 @@
+sudo apt install -y python3.8-venv
+
 # ①Githubからクローンします
 git clone https://github.com/comfyanonymous/ComfyUI.git
 
 # ②ディレクトリを移動します
 cd ComfyUI
 
-# Current GPUsoroban does not support VENV (could in future investigate useing Docker or similar container)
-pip install virtualenv
+# installs venv
 python -m venv venv
 
 source venv/bin/activate
+pip install --upgrade pip
 
 # ③requirement.txtをエディターで開きます
 (
@@ -23,9 +25,9 @@ echo 'Pillow'
 echo 'scipy'
 echo 'tqdm'
 echo 'psutil'
-echo 'torch==1.12.1'
-echo 'torchvision==0.13.1'
-echo 'torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118'
+echo 'torch==2.0.1'
+echo 'torchvision==0.15.2'
+echo 'torchaudio==2.0.2'
 ) > requirements.txt
 
 # ④以下の内容を貼り付け、Ctrl＋sで保存し、Ctrl+xで抜けます
