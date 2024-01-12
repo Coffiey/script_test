@@ -1,0 +1,12 @@
+{
+  "name": "CLIMT-style",
+  "version": 1.0,
+  "sd_version": "auto",
+  "sd_checkpoint": "7th_anime_v3_C.safetensors",
+  "loras": [],
+  "style_prompt": "",
+  "negative_prompt": "embedding:EasyNegativeV2.safetensors",
+  "sampler": "DPM++ 2M Karras",
+  "sampler_steps": 20,
+  "cfg_scale": 7
+}
